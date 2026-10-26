@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import { personalInfo, skillsData, projectsData, experienceData } from './data/portfolioData';
+import Contact from './components/Contact';
 
 export default function App() {
   const [filter, setFilter] = useState('all');
@@ -20,6 +21,7 @@ export default function App() {
             <a href="#projects" className="hover:text-emerald-400 transition-colors">Projects</a>
             <a href="#skills" className="hover:text-emerald-400 transition-colors">Skills</a>
             <a href="#experience" className="hover:text-emerald-400 transition-colors">Experience</a>
+            <a href="#contact" className="hover:text-emerald-400 transition-colors">Contact</a>
           </div>
         </div>
       </nav>
@@ -40,8 +42,8 @@ export default function App() {
             <a href="#projects" className="px-6 py-3 rounded-lg bg-emerald-500 hover:bg-emerald-600 text-slate-950 font-semibold transition-all shadow-lg shadow-emerald-500/20">
               View Work
             </a>
-            <a href={personalInfo.linkedin} target="_blank" rel="noreferrer" className="px-6 py-3 rounded-lg bg-slate-800 hover:bg-slate-700 text-white font-medium border border-slate-700">
-              LinkedIn
+            <a href="#contact" className="px-6 py-3 rounded-lg bg-slate-800 hover:bg-slate-700 text-white font-medium border border-slate-700">
+              Get in Touch
             </a>
           </div>
         </div>
@@ -121,6 +123,9 @@ export default function App() {
           ))}
         </div>
       </section>
+
+      {/* Contact Section */}
+      <Contact />
 
       {/* Footer */}
       <footer className="border-t border-slate-800 py-8 text-center text-sm text-slate-500">
