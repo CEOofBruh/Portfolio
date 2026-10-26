@@ -1,16 +1,19 @@
-# React + Vite
+# Developer Portfolio | Joshua Isaiah Codorniz
 
-This template provides a minimal setup to get React working in Vite with HMR and some Oxlint rules.
+Web portfolio built with React, Vite, and Tailwind CSS. Designed to highlight frontend capabilities, CMS architecture, full-stack payment integrations, and web automation work.
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+## Project Overview
 
-## React Compiler
+This application serves as a central showcase for my professional work as a Web Designer & Developer. Built with clean functional React components and component-driven state architecture, it presents live real estate acquisition platforms, institutional portals, technical skills, and work experience.
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+### Portfolio Sections Summary
 
-## Expanding the Oxlint configuration
+- About / Hero: A landing banner featuring my professional summary, key specialization areas, contact CTAs, and links to external design channels (Behance & LinkedIn).
+- Featured Projects: An interactive, filterable gallery showcasing platforms built from scratch and enterprise systems managed/engineered by me.
+- Technical Skills: A structured grid categorizing expertise across Core Frontend & Web Development, CMS & Page Builders, Backend & Automation (Stripe, GHL Webhooks), and Infrastructure/Tools.
+- Work History: A chronological timeline detailing past employment, roles, responsibilities, and accomplishments across real estate platforms and higher education institutions.
+- Contact: Quick-connect buttons for direct email communication and professional networking.
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and Oxlint's TypeScript related rules in your project.
+---
