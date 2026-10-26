@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { personalInfo, skillsData, projectsData, experienceData } from './data/portfolioData';
-import Contact from './components/Contact';
+import Contact from './src/Contact';
 
 export default function App() {
   const [filter, setFilter] = useState('all');
