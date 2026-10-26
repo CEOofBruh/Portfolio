@@ -12,22 +12,22 @@ export default function Contact() {
   };
 
   return (
-    <section id="contact" className="py-20 px-6 max-w-7xl mx-auto border-t border-slate-800">
+    <section id="contact" className="py-20 px-6 max-w-7xl mx-auto border-t border-slate-800/80">
       <div className="max-w-3xl mx-auto text-center space-y-6">
-        <span className="px-3 py-1 rounded-full bg-emerald-500/10 border border-emerald-500/20 text-emerald-400 text-xs font-semibold uppercase tracking-wider">
+        <span className="px-3.5 py-1 rounded-full bg-emerald-500/10 border border-emerald-500/20 text-emerald-400 text-xs font-semibold uppercase tracking-wider">
           Get In Touch
         </span>
         <h2 className="text-3xl sm:text-4xl font-extrabold text-white tracking-tight">
           Let's Work Together
         </h2>
         <p className="text-slate-400 text-base leading-relaxed">
-          Whether you need a custom WordPress ecosystem, GoHighLevel automation funnel, or a fast React web application, feel free to reach out.
+          Whether you need a custom WordPress platform, GoHighLevel automation funnel, or a fast React application, feel free to reach out.
         </p>
 
-        <div className="pt-6 flex flex-col sm:flex-row items-center justify-center gap-4">
+        <div className="pt-4 flex flex-col sm:flex-row items-center justify-center gap-4">
           <a
             href={`mailto:${personalInfo.email}`}
-            className="w-full sm:w-auto px-6 py-3.5 rounded-xl bg-emerald-500 hover:bg-emerald-600 text-slate-950 font-bold transition-all shadow-lg shadow-emerald-500/20 flex items-center justify-center gap-2 text-sm"
+            className="w-full sm:w-auto px-6 py-3.5 rounded-xl bg-emerald-500 hover:bg-emerald-400 text-slate-950 font-bold transition-all shadow-lg shadow-emerald-500/20 flex items-center justify-center gap-2 text-sm"
           >
             <Mail className="w-4 h-4" /> Send Email
           </a>
@@ -48,7 +48,7 @@ export default function Contact() {
           </button>
         </div>
 
-        <div className="pt-8 flex justify-center gap-6 text-slate-400 text-sm font-medium">
+        <div className="pt-6 flex justify-center gap-6 text-slate-400 text-sm font-medium">
           <a
             href={personalInfo.linkedin}
             target="_blank"
@@ -69,3 +69,4 @@ export default function Contact() {
       </div>
     </section>
   );
+}
