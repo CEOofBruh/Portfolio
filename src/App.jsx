@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { personalInfo, skillsData, projectsData, experienceData } from './portfolioData';
+import { personalInfo, skillsData, projectsData, experienceData } from './data/portfolioData';
 import Contact from './Contact';
 
 export default function App() {
@@ -99,4 +99,38 @@ export default function App() {
               <h3 className="text-lg font-bold text-emerald-400 mb-4">{category}</h3>
               <div className="flex flex-wrap gap-2">
                 {skills.map((s) => (
-                  <span key={s} className="px-3 py-
+                  <span key={s} className="px-3 py-1.5 rounded-lg bg-slate-800/80 text-slate-200 text-sm border border-slate-700/50">{s}</span>
+                ))}
+              </div>
+            </div>
+          ))}
+        </div>
+      </section>
+
+      {/* Experience Section */}
+      <section id="experience" className="py-20 px-6 max-w-7xl mx-auto border-t border-slate-800/80">
+        <h2 className="text-3xl font-bold text-white mb-8">Work History</h2>
+        <div className="space-y-6">
+          {experienceData.map((job, idx) => (
+            <div key={idx} className="bg-slate-900/40 border border-slate-800/80 p-6 rounded-2xl space-y-2 hover:border-slate-700/80 transition-colors">
+              <span className="text-xs font-semibold text-emerald-400">{job.period}</span>
+              <h3 className="text-xl font-bold text-white">{job.role}</h3>
+              <p className="text-slate-400 text-sm font-medium">{job.company} — {job.location}</p>
+              <ul className="list-disc list-inside text-slate-300 text-sm space-y-1 pt-2">
+                {job.responsibilities.map((r, i) => <li key={i}>{r}</li>)}
+              </ul>
+            </div>
+          ))}
+        </div>
+      </section>
+
+      {/* Contact Section */}
+      <Contact />
+
+      {/* Footer */}
+      <footer className="border-t border-slate-800/80 py-8 text-center text-sm text-slate-500">
+        <p>© {new Date().getFullYear()} Joshua Isaiah Codorniz. Built with React, Vite & Tailwind CSS.</p>
+      </footer>
+    </div>
+  );
+}

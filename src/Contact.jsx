@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { Mail, Linkedin, ExternalLink, Send, CheckCircle } from 'lucide-react';
-import { personalInfo } from '../data/portfolioData';
+import { personalInfo } from './data/portfolioData';
 
 export default function Contact() {
   const [copied, setCopied] = useState(false);
@@ -69,8 +69,3 @@ export default function Contact() {
       </div>
     </section>
   );
-<<<<<<< HEAD
-}
-=======
-}
->>>>>>> 712841991afab5efeaa30c48ba6e7b35ef7320c0
